@@ -1,7 +1,7 @@
 # sql-challenge
 # SQL Table Creation and Queries:
 #### Tables are created for "departments," "dep_emp" (department employees), "dep_manager," "employees," "salary," and "titles."
-####Various queries are executed to gather specific information:
+#### Various queries are executed to gather specific information:
 Employee details with their salary.
 
 Employees hired in 1986.
