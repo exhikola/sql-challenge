@@ -12,6 +12,7 @@ Employees in the Sales and Development departments.
 Frequency counts of employee last names.
 
 ERD Datagram visualise the relation between the tables. Primary and foreign keys.
+
 Departments Table:
 Primary Key (PK): dept_no
 Attributes: dept_name
@@ -20,10 +21,12 @@ Department_Employee Table:
 Composite Primary Key (PK): emp_no, dept_no
 Foreign Keys (FK): emp_no references Employees, dept_no references Departments
 Relationship: Many-to-Many between Employees and Departments
+
 Department_Manager Table:
 Primary Key (PK): dept_no
 Foreign Key (FK): emp_no references Employees
 Relationship: One-to-Many with Employees (via emp_no), indicating a manager for each department.
+
 Employees Table:
 Primary Key (PK): emp_no
 Attributes: birth_date, first_name, last_name, gender, hire_date
@@ -32,10 +35,12 @@ One-to-Many with Department_Employee (via emp_no)
 One-to-Many with Department_Manager (via emp_no)
 One-to-Many with Salaries (via emp_no)
 One-to-Many with Titles (via emp_no)
+
 Salaries Table:
 Primary Key (PK): emp_no
 Foreign Key (FK): emp_no references Employees
 Relationship: One-to-One with Employees (via emp_no)
+
 Titles Table:
 Primary Key (PK): emp_no
 Foreign Key (FK): emp_no references Employees
