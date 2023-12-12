@@ -10,3 +10,5 @@ Employees named Hercules with last names starting with 'B'.
 Employees in the Sales department.
 Employees in the Sales and Development departments.
 Frequency counts of employee last names.
+
+ERD Datagram
