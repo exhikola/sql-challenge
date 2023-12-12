@@ -12,3 +12,23 @@ Employees in the Sales and Development departments.
 Frequency counts of employee last names.
 
 ERD Datagram
+_____________
+Departments         |   Department_Employee 
+   
+dept_no (PK)        |   emp_no (PK, FK)     
+dept_name           |   dept_no (PK, FK)      
+___________________________________________   
+Department_Manager  |   Employees          
+  
+dept_no (PK, FK)    |   emp_no (PK)
+emp_no (PK, FK)     |   birth_date
+                    |   first_name          
+                    |   last_name           
+                    |   gender              
+                    |   hire_date            
+____________________________________________
+Salaries           |    Titles               
+emp_no (PK, FK)    |    emp_no (PK, FK)    
+salary             |     title  
+                                  
+                       
